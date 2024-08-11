@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        {% if title %}
+        <title>{{ title }} - Blog</title>
+        {% else %}
+        <title>Welcome to the Blog!</title>
+        {% endif %}
+    </head>
+    <body>
+        <!-- "root url"/index -->
+        <div>Blog: <a href="/index">Home</a></div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
